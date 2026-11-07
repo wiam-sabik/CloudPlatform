@@ -51,6 +51,7 @@ docker run -d -p 5000:5000 --name cloudplatform-container cloudplatform
 - IAM role `cloudplatform-ec2-role` attached to the EC2 instance (CloudWatchAgentServerPolicy), so no access keys are stored on the server
 - Custom least-privilege policy `monitoring-readonly-policy`: read-only access to EC2 and CloudWatch (Describe/Get/List actions only)
 - Practice IAM user `viewer-test` with only that policy, no console access and no access keys
+- SSH (port 22) restricted to a single trusted IP in the EC2 security group; only the demo port (5000) is public
 - Note: user groups and IAM Access Analyzer were unavailable on the Free-plan account (blocked by plan limits)
 
 Full details: [iam.documentation.md](iam.documentation.md)

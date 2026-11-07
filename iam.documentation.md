@@ -95,10 +95,10 @@ These are plan limits, not configuration mistakes. Upgrading is irreversible, re
 - No access keys created for any user.
 - No AdministratorAccess granted to any identity besides the account owner.
 - No account IDs, keys, or secrets stored in this repository.
+-SSH (port 22) restricted to a single IP in the instance’s security group.
 
 ## 7. Future work
 
 - Add a custom policy limited to a single S3 bucket when S3 is added to the project.
-- Restrict SSH (port 22) in the instance's security group to a trusted IP address.
 - Revisit user groups and Access Analyzer if the account is upgraded in the future.
 - Delete `viewer-test` once it is no longer needed.
