@@ -106,7 +106,7 @@ docker run -d -p 5000:5000 --name cloudplatform-container cloudplatform
 
 \- \[ ] AWS S3 integration
 
-\- \[ ] IAM / security best practices
+\- \[x] IAM / security best practices
 
 \- \[ ] AWS networking / VPC
 
